@@ -36,7 +36,7 @@ class SimSwapUnofficial:
         self.session = onnxruntime.InferenceSession(model_file, **kwargs)
         self.crop_size = self.session.get_inputs()[0].shape[-2:]
         self.align_crop_size = 512
-        self.align_crop_mode = "ffhq"
+        self.align_crop_mode = "arcface"
 
     def forward(self, target, source_embedding):
         latent = source_embedding.reshape(1, -1)
