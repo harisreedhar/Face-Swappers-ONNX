@@ -1,0 +1,5 @@
+dlib==19.24.2
+numpy==1.24.0
+onnxruntime-gpu==1.16.0
+opencv-python==4.7.0.72
+
